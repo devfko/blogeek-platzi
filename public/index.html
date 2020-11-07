@@ -37,7 +37,7 @@
         </ul>
     </nav>
     <h4 id="tituloPost" class="titulo-posts">Posts de la Comunidad</h4>
-    <section class="posts" id="posts">        
+    <section class="posts" id="posts">
     </section>
     <footer class="footer" id="footer">
 
@@ -107,7 +107,7 @@
                         <span>Empieza Ahora</span>
                     </div>
                     <div class="col s12 m6 registro-formulario">
-                        <div class="input-field">                            
+                        <div class="input-field">
                             <input id="emailSesion" type="email" required/>
                             <label for="emailSesion">E-mail:</label>
                         </div>
@@ -117,18 +117,21 @@
                         </div>
                         <div class="div-btnInicioSesion">
                             <a id="btnInicioEmail" class="btn waves-effect waves-light">Iniciar Sesión<i class="material-icons right">send</i></a>
-                        </div>           
+                        </div>
                         <div class="lbl-ingresar-redes">
                             <span>INGRESA CON:</span>
                         </div>
-                        <div class="registro-iconos-redes">                                          
+                        <div class="registro-iconos-redes">
                             <a id="authFB" class="logo-facebook" href="#"></a>
                             <a id="authGoogle" class="logo-google" href="#"></a>
                             <a id="authTwitter" class="logo-twitter" href="#"></a>
-                        </div> 
+                        </div>
                     </div>
                     <div class="col s12 m12 div-btnRegistrarse">
-                        <a id="btnRegistrarse" class="btn waves-effect waves-light">Crear una cuenta<i class="material-icons left">account_box</i></a>                        
+                        <a id="btnRegistrarse" class="btn waves-effect waves-light">Crear una cuenta<i class="material-icons left">account_box</i></a>
+                    </div>
+                    <div class="col s12 m12 div-btnRecordarPassword">
+                        <a id="btnForgetPassword" class="btn btn-outline-success waves-effect waves-light">¿Reestablecer Contraseña?<i class="material-icons left">settings_backup_restore</i></a>
                     </div>
                 </div>
             </div>
@@ -149,20 +152,20 @@
                     </div>
                     <div class="col s12 m6 registro-formulario">
                         <div class="input-field">
-                            <input id="nombreContactoReg" type="text"  maxlength="50" data-length="50" required />
+                            <input id="nombreContactoReg" type="text" maxlength="50" data-length="50" required />
                             <label for="nombreContactoReg">Nombres:</label>
                         </div>
                         <div class="input-field">
-                            <input id="emailContactoReg" type="email"  maxlength="50" data-length="50" required />
+                            <input id="emailContactoReg" type="email" maxlength="50" data-length="50" required />
                             <label for="emailContactoReg">E-mail:</label>
                         </div>
                         <div class="input-field">
-                            <input id="passwordReg" type="password"  maxlength="10" data-length="10" required />
+                            <input id="passwordReg" type="password" maxlength="10" data-length="10" required />
                             <label for="passwordReg">Password:</label>
                         </div>
                         <div class="div-btnInicioSesion">
                             <a id="btnRegistroEmail" class="btn waves-effect waves-light">Registrarse<i class="material-icons left">account_box</i></a>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="col s12 m12 div-btnRegistrarse">
                         <a id="btnIniciarSesion" class="btn waves-effect waves-light">Iniciar Sesión<i class="material-icons right">send</i></a>
@@ -190,7 +193,7 @@
                             <label for="tituloNewPost">Titulo:</label>
                         </div>
                         <div class="input-field">
-                            <textarea id="descripcionNewPost" type="text"  maxlength="200" data-length="200" class="materialize-textarea" required></textarea>
+                            <textarea id="descripcionNewPost" type="text" maxlength="200" data-length="200" class="materialize-textarea" required></textarea>
                             <label for="descripcionNewPost">Descripción:</label>
                         </div>
                         <div class="input-field">
@@ -206,7 +209,7 @@
                         </div>
                         <div class="div-btnInicioSesion">
                             <a id="btnRegistroPost" class="btn waves-effect waves-light">Crear Post<i class="material-icons left">create</i></a>
-                        </div>                      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -221,15 +224,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
 <!-- Firebase App is always required and must be first -->
-<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-storage.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-messaging.js"></script>
 
 
 <!--build:js js/main.min.js -->
